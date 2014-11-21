@@ -6,11 +6,11 @@
   
 Design Goals: This library is designed to be...  
   
-	* More compliant with the chip's manufacturer specified operation
-	* Use full potential hw capabilities via Arduino
-	* More reliable and feature rich  
-	* Easy for beginners to use, with well documented examples and features 
-	* Consumed with a public interface that's similiar to other Arduino standard libraries  
+	* More compliant with the chip's manufacturer specified operation (Original RF24 by TMRh20 )
+	* Use full potential hw capabilities via Arduino (Original RF24 by TMRh20 )
+	* More reliable and feature rich  (Original RF24 by TMRh20 )
+	* Easy for beginners to use, with well documented examples and features (Original RF24 by TMRh20 ) 
+	* Consumed with a public interface that's similiar to other Arduino standard libraries  (Original RF24 by TMRh20 )
 	* Built against the standard SPI and SoftSPI library
 
   
@@ -20,25 +20,31 @@ define SOFTSPI as compiler flag (-DSOFTSPI).
 
 PIN Configuration
 
-with standard SPI
-  nRF24L01      UNO     LEONARDO
-  * GND  1        GND     GND
-  * VCC  2        3.3v    3.3v
-  * CE   3        7       7
-  * CSN  4        8       8
-  * SCK  5        13      ICSP_3
-  * MOSI 6        11      ICSP_4
-  * MISO 7        12      ICSP_1
+* With standard SPI
 
- with SoftSPI
-  nRF24L01      UNO     
-  * GND  1        GND   
-  * VCC  2        3.3v   
-  * CE   3        7      
-  * CSN  4        8      
-  * SCK  5        14 (A0)    
-  * MOSI 6        15 (A1)  
-  * MISO 7        16 (A2)
+|nRF24L01   |   UNO   |  LEONARDO |
+|-----------|---------|-----------|
+|GND    1   |   GND   |    GND    |
+|VCC    2   |   3.3v  |    3.3v   |
+|CE     3   |    7    |     7     |
+|CSN    4   |    8    |     8     |
+|SCK    5   |   13    |   ICSP_3  |
+|MOSI   6   |   11    |   ICSP_4  |
+|MISO   7   |   12    |   ICSP_1  |
+|-----------|---------|-----------|
+
+ * With SoftSPI
+
+| nRF24L01  |     UNO   |
+|-----------|-----------|    
+|GND    1   |     GND   |
+|VCC    2   |    3.3v   |
+|CE     3   |     7     | 
+|CSN    4   |     8     | 
+|SCK    5   |   14 (A0) |   
+|MOSI   6   |   15 (A1) | 
+|MISO   7   |   16 (A2) |
+|-----------|-----------|
 
 
 
